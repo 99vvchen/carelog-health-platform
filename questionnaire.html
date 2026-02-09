@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>問診清單</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body id="top">
+  <!-- 側邊攔 -->
+  <aside class="sidebar">
+    <div class="icon">
+    <div class="logo">
+      <img src="img/logo.png" alt="logo" title="carelog">
+      <p>Carelog</p>
+    </div>
+    <div class="menu">
+<i class="bi bi-list"></i>
+    </div>
+    </div>
+    <ol>
+      <li>
+        <a href="index.html" >
+        <i class="bi bi-clipboard-heart-fill"></i> 健康看板
+      </a>
+    </li>
+
+      <li>
+        <a href="management.html">
+        <i class="bi bi-capsule"></i> 紀錄管理
+      </a>
+      </li>
+
+      <li>
+        <a href="questionnaire.html">
+        <i class="bi bi-card-list"></i> 問診清單
+      </a>
+      </li>
+
+      <li>
+        <a href="app.html">
+        <i class="bi bi-phone"></i> 下載app
+      </a>
+      </li>
+
+      <li class="login-mb">
+        <a href="login.html">
+        <i class="bi bi-person-circle"></i> 登入註冊
+      </a>
+      </li>
+
+      <li class="login">
+        <a href="login.html">
+        <i class="bi bi-person-circle"></i> 登入註冊
+      </a>
+      </li>
+    </ol>
+  
+  </aside>
+
+<!-- main -->
+<main class="main-content questionnaire-page" >
+  <div class="container">
+  <header>
+  <h1>問診清單</h1>
+  <p>管理待問及已經解決問題</p>
+  </header>
+  <div class="card-list">
+      <div class="card">
+        <h3 class="q-label"><i class="bi bi-question-circle-fill"></i> 待解決</h3>
+        <div class="card-s">
+          <span>2026-01-05</span>
+          <h4>Q: 媽媽早上吃完藥都會覺得頭暈可以調整嗎?</h4>
+          <p class="ans">新增醫生回答<i class="bi bi-plus-circle-fill"></i></p>
+        </div>
+        <div class="card-s">
+          <span>2026-01-08</span>
+          <div class="frame">
+             <img src="img/高血壓.jpg" alt="高血壓">
+          </div>
+          <h4>Q: 血壓連續兩天偏高，為甚麼?</h4>
+          <p class="ans">新增醫生回答<i class="bi bi-plus-circle-fill"></i></p>
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="q-label"><i class="bi bi-check-circle-fill"></i> 已解決</h3>
+        <div class="card-s">
+          <span>2025-12-01</span>
+          <h4>Q:靜脈曲張手術的好處及危險性是甚麼?</h4>
+          <p class="ans">醫生回答:<br>
+            手術好處：可以改善腿痠、腫、痛，外觀變好，
+            並降低日後皮膚病變或潰瘍的風險。
+            手術風險：常見是短期瘀青、腫脹或輕微疼痛，
+            少數會有暫時麻木或血栓，整體風險不高。</p>
+        </div>
+        <div class="card-s">
+          <span>2025-11-25</span>
+          <h4>Q:小中風之後可以吃香蕉嗎?有些親戚說不行吃</h4>
+          <p class="ans">醫生回答:<br>
+            香蕉含豐富的鎂、鉀、碳水化合物，鉀離子能防止血壓上升，而高血壓是腦中風最重要的危險因子，因此適當攝取香蕉，有助於血壓防治，但仍應避免過量攝取反而造成身體傷害。一般而言，仍建議每日均衡攝取六大類食物，每類食物中宜多加變化，香蕉攝取量建議95公克(大1/2根、小1根)。若是高血壓且接受藥物治療之患者，因部分藥物之藥理機轉會使血鉀上升，建議與您的醫師討論香蕉之攝取量。高血壓飲食原則必須合乎均衡飲食及三少二多：多蔬果、多高纖、低油脂、少加工食品、少調味料。</p>
+        </div>
+        <div class="card-s">
+          <span>2025-11-02</span>
+          <h4>Q:菠菜與豆腐一起吃，真的會導致結石嗎？</h4>
+          <p class="ans">醫生回答:<br>
+            1. 菠菜的草酸與豆腐分解出的草酸及鈣質，會在腸道結合成草酸鈣，但草酸鈣不會被腸道吸收，反而會形成糞石後隨著糞便排出，所以菠菜豆腐湯並不會造成身體結石的問題。<br>2. 草酸鈣結石的主因，是高草酸血症所導致，在攝取含有草酸的食物，反而要同時攝取鈣質，才能提高草酸和鈣離子在腸道結合的機會以減少草酸的吸收，進而降低草酸鈣結石的風險。</p>
+        </div>
+
+      </div>
+      <a href="#top" class="gototop" ><i class="bi bi-arrow-up"></i></a>
+  </div>
+</main>
+</body>
+</html>
