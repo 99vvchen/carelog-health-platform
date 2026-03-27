@@ -35,6 +35,12 @@ body {
  
  
 }
+.sidebar li.tab-item.active a {
+    color: var(--text-main);
+    background-color: var(--primary-bg); 
+    border-radius: 10px;
+    font-weight: bold;
+}
 .sidebar a{
 text-decoration: none;
  }
@@ -110,6 +116,9 @@ gap:30px;
 }
 header{
   padding:50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
  
 }
 
@@ -222,6 +231,28 @@ background-color: var(--card-white);
   box-shadow: 0 3px 3px 1px #4a4a4a21;
  
 }
+.addimg { 
+  margin-top: 10px;
+  grid-column: span 2;
+  input[type="file"] {
+    display: none; 
+  }
+
+  label {
+   display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 22px;
+    background: var(--primary-bg);
+    color: var(--text-main);
+    cursor: pointer;
+    border: 1px dashed #A0A0A0;
+    transition: 0.2s ease;
+    
+  }
+}
 .form-grid {
   margin-top: 10px;
   display: grid;
@@ -249,6 +280,7 @@ background-color: var(--card-white);
     font-size: 0.9rem;
     font-weight: 300; 
 }
+
 input#date{
   color: #A0A0A0;
 }
@@ -350,6 +382,7 @@ input.btn-submit:active {
    width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 45%;
   }
   .card-s p.desc{
     font-size:0.9rem;
@@ -387,6 +420,10 @@ input.btn-submit:active {
 }
 .questionnaire-page .card-list .card-s{
   margin-bottom: 20px;
+}
+.questionnaire-page .card-list .card-s img.hp{
+  object-fit: cover;
+  object-position: 50% 30%;
 }
 .q-label{
   width: 150px;
@@ -760,9 +797,7 @@ text-align: center;
     .menu i{
       display: block;
     }
-    .sidebar ol{
-      margin-top: 10px;
-    }
+    
     header{
       display:flex;
       flex-direction: column;
