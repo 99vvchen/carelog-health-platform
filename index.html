@@ -97,11 +97,13 @@
       <div class="date">
         <label for="date">紀錄日期</label>
       <input type="datetime-local" id="date" name="recordate" >
+      <span class="error-msg" id="date-error"></span>
       </div>
       
       <div class="name">
         <label for="name">紀錄內容描述</label>
       <input type="text" id="name" name="description" placeholder="例如:血壓、頭痛">
+      <span class="error-msg" id="name-error"></span>
       </div>
 
       <div class="addimg">
@@ -128,12 +130,16 @@
         <option value="three meals">健康記錄</option>
         <option value="three meals">想問醫生</option>
       </select>
+      <span class="error-msg" id="type-error"></span>
     </div>
       <input class="btn-re" type="reset" value="重填">
         <input class="btn-submit" type="submit" value="儲存">
 </div>
+</form>
 <a href="#top" class="gototop" ><i class="bi bi-arrow-up"></i></a>
 </div>
 </main>
+<script src="script.js"></script>
+
 </body>
 </html>

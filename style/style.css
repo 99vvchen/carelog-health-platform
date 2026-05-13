@@ -231,6 +231,16 @@ background-color: var(--card-white);
   box-shadow: 0 3px 3px 1px #4a4a4a21;
  
 }
+.error-msg {
+  color: red;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.error-msg.show {
+  display: block;
+  padding-top: 5px;
+}
 .addimg { 
   margin-top: 10px;
   grid-column: span 2;
@@ -780,6 +790,19 @@ text-align: center;
     border-radius: 0 0 30px 30px;
     position: relative;
   }
+
+  .sidebar ol {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+  }
+   .sidebar.open ol {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  
   
    .logo p{
     font-size: 1rem;
