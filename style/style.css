@@ -329,6 +329,17 @@ input.btn-submit:active {
   padding: 30px;
   position: relative;
 }
+.management-page header{
+  padding: 20px 0;
+}
+
+#search{
+  border: 1px solid var(--text-main);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  height: 30px;
+
+}
 .nav-select{
  margin-bottom: 50px;
  display: flex;
@@ -399,6 +410,9 @@ input.btn-submit:active {
   }
 
 .gototop{
+    opacity: 0;         /* 預設隱藏 */
+  pointer-events: none; /* 隱藏時不能點 */
+  transition: opacity 0.3s ease;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -418,6 +432,10 @@ input.btn-submit:active {
     transform: scale(0.9);
     transition: transform 0.5s ease;
   }
+  .gototop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /* 問診清單 */
 .main-content.questionnaire-page .card-list{
@@ -843,6 +861,9 @@ text-align: center;
 }
 
 /* 管理page */
+#search{
+  width: 100%;
+}
 .nav-select{
   flex-direction: column;
 
