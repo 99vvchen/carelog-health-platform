@@ -96,7 +96,7 @@
     <form class="form-grid" action="#" method="get" enctype="multipart/form-data">
       <div class="date">
         <label for="date">紀錄日期</label>
-      <input type="datetime-local" id="date" name="recordate" >
+      <input type="date" id="date" name="recordate" >
       <span class="error-msg" id="date-error"></span>
       </div>
       
@@ -124,11 +124,11 @@
         <span>類型</span>
         <select id="type" name="usertype">
         <option selected hidden>請選擇</option>
-        <option value="once">藥物紀錄</option>
-        <option value="twice">回診記錄</option>
-        <option value="three meals">醫囑記錄</option>
-        <option value="three meals">健康記錄</option>
-        <option value="three meals">想問醫生</option>
+        <option value="藥物紀錄">藥物紀錄</option>
+        <option value="回診記錄">回診記錄</option>
+        <option value="醫囑記錄">醫囑記錄</option>
+        <option value="健康記錄">健康記錄</option>
+        <option value="想問醫生">想問醫生</option>
       </select>
       <span class="error-msg" id="type-error"></span>
     </div>
@@ -139,8 +139,10 @@
 <a href="#top" class="gototop" ><i class="bi bi-arrow-up"></i></a>
 </div>
 </main>
+<div class="toast" id="toast">✓ 紀錄儲存成功！</div>
 <script src="./js/script.js"></script>
 <script src="./js/index.js"></script>
+
 
 </body>
 </html>

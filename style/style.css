@@ -318,6 +318,27 @@ input.btn-submit:active {
     box-shadow: inset 0 3px 5px rgba(0,0,0,0.1);
     transition: 0.1s;
   }
+
+  /*彈窗*/
+  .toast {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--brand-bg);
+  color: var(--card-white);
+  box-shadow: #3D352F;
+  padding: 20px 30px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
   
 
 
@@ -391,7 +412,45 @@ input.btn-submit:active {
     flex-direction: column;
     justify-content: start;
     gap: 10px;
+     position: relative; 
   }
+  .kebab-wrap {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.kebab-btn {
+  color: var(--text-main);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.kebab-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  z-index: 10;
+}
+
+.kebab-menu.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.kebab-menu button {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-align: left;
+}
   .card-s .frame{
     width: 100%;
     height: 120px;
